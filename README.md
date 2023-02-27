@@ -1,4 +1,4 @@
-# Electric Vehicle Adoption Trends in WA State
+# Group AB 4 - Electric Vehicle Adoption Trends in WA State
 
 The aim of this project is to understand the adoption trends of electric vehicles through demographic and geographic factors that influence growth in Washington State. 
 
@@ -10,7 +10,7 @@ This project should acknowledge that electric vehicles are just one part of a br
 
 This project analyzes and visualizes the growth and distribution of electric vehicles and plug-in hybrid electric vehicles in Washington State. The data will be cleaned and displayed as maps, graphs, charts, and comprehensive analysis. The aim of this project is to look into adoption trends of electric vehicles through demographic and geographic factors that influenced growth in the state.
 
-Major data source: [!WA state Electrical Vehicle Population Data](https://data.wa.gov/Transportation/Electric-Vehicle-Population-Data/f6w7-q2d2)
+Major data source: [WA state Electrical Vehicle Population Data](https://data.wa.gov/Transportation/Electric-Vehicle-Population-Data/f6w7-q2d2)
 
 ## Targeted audience
 
