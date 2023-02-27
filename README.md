@@ -18,7 +18,8 @@ This dataset mainly targets the government and car companies to study customer i
 
 ## Multimedia
 
-- Article: https://t4america.org/2023/01/20/sparking-progress-report/
-- Article: https://www.geekwire.com/2020/study-finds-smart-charging-strategies-can-help-u-s-prepare-surge-electric-vehicle-usage/ 
-- Wanting to have more electric vehicles in King County:https://www.youtube.com/watch?v=qeWYDfVvH1s 
-- Electric Vehicle Tax Credit: https://www.youtube.com/watch?v=N7qdFRbv-i8 
+- Article: [A new report on our electric future](https://t4america.org/2023/01/20/sparking-progress-report/)
+- Article: [Study finds that smart charging strategies can help U.S. prepare for surge in electric vehicle usage
+](https://www.geekwire.com/2020/study-finds-smart-charging-strategies-can-help-u-s-prepare-surge-electric-vehicle-usage/) 
+- [Wanting to have more electric vehicles in King County](https://www.youtube.com/watch?v=qeWYDfVvH1s)
+- [Electric Vehicle Tax Credit](https://www.youtube.com/watch?v=N7qdFRbv-i8)
