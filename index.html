@@ -188,22 +188,22 @@
             
             // second layer
             map.addLayer({
-                'id': 'San Francisco Park Scores',
+                'id': 'map 2',
                 'type': 'raster',
                 'layout': {
                     'visibility': 'none'
                 },
-                'source': 'second-tile'
+                'source': 'map2'
             });
 
             // third layer
             map.addLayer({
-                'id': 'San Francisco Park Scores on Basemap',
+                'id': 'map 3 ',
                 'type': 'raster',
                 'layout': {
                     'visibility': 'none'
                 },
-                'source': 'third-tile'
+                'source': 'map3'
             });
 
         });
@@ -212,12 +212,12 @@
         // After the last frame rendered before the map enters an "idle" state.
         map.on('idle', () => {
             // If these two layers were not added to the map, abort
-            if (!map.getLayer('Modified Basemap') || !map.getLayer('San Francisco Park Scores') || !map.getLayer('San Francisco Park Scores on Basemap')) {
+            if (!map.getLayer('Modified Basemap') || !map.getLayer('map2') || !map.getLayer('map3')) {
                 return;
             }
 
             // Enumerate ids of the layers.
-            const toggleableLayerIds = ['Modified Basemap', 'San Francisco Park Scores', 'San Francisco Park Scores on Basemap'];
+            const toggleableLayerIds = ['Modified Basemap', 'map2', 'map3'];
 
             // Set up the corresponding toggle button for each layer.
             for (const id of toggleableLayerIds) {
