@@ -126,8 +126,8 @@
     <div id='map'></div>
 
     <div class='map-overlay' id='features'>
-        <h2>San Francisco Park Scores</h2>
-        <h5>This map presents the average quarterly park evaluation scores in San Francisco (2004-2015)</h5> 
+        <h2>Electric Vehicle Population Data</h2>
+        <h5>The aim of this project is to understand the adoption trends of electric vehicles through demographic and geographic factors that influence growth in Washington State.</h5> 
     </div>
     <div class='map-overlay'></div>
 
@@ -140,49 +140,40 @@
             container: 'map', // container ID
             style: 'mapbox://styles/mapbox/dark-v10',
             zoom: 12, // starting zoom
-            center: [-122.43383, 37.77641] // starting center
+            center: [-121.84267319515028, 47.508667010507324] // starting center
+
         });
 
         map.on('load', () => { //simplifying the function statement: arrow with brackets to define a function
 
-            // first tile
-            map.addSource('first-tile', {
+            // map 1 - basemap
+            map.addSource('basemap', {
                 'type': 'raster',
                 'tiles': [
-                    'assets/tile_sets_1/first-tile/{z}/{x}/{y}.png'
+                    'assets/basemap/{z}/{x}/{y}.png'
                 ],
                 'tileSize': 256,
-                'attribution': 'Map tiles designed by Jasmine So</a>'
+                'attribution': 'Map tiles designed by Group AB4</a>'
             });
 
-            // second tile
+            // map 2 
             map.addSource('second-tile', {
                 'type': 'raster',
                 'tiles': [
                     'assets/tile_sets_2/second-tile/{z}/{x}/{y}.png'
                 ],
                 'tileSize': 256,
-                'attribution': 'Map tiles designed by Jasmine So</a>'
+                'attribution': 'Map tiles designed by Group AB4</a>'
             });
 
-            // third tile
+            // map 3 
             map.addSource('third-tile', {
                 'type': 'raster',
                 'tiles': [
                     'assets/tile_sets_3/third-tile/{z}/{x}/{y}.png'
                 ],
                 'tileSize': 256,
-                'attribution': 'Map tiles designed by Jasmine So</a>'
-            });
-            
-            // forth tile 
-            map.addSource('forth-tile', {
-                'type': 'raster',
-                'tiles': [
-                    'assets/tile_sets_4/forth-tile/{z}/{x}/{y}.png'
-                ],
-                'tileSize': 256,
-                'attribution': 'Map tiles designed by Jasmine So</a>'
+                'attribution': 'Map tiles designed by Group AB4</a>'
             });
 
             // first layer
@@ -192,7 +183,7 @@
                 'layout': {
                     'visibility': 'none'
                 },
-                'source': 'first-tile'
+                'source': 'basemap'
             });
             
             // second layer
@@ -214,16 +205,6 @@
                 },
                 'source': 'third-tile'
             });
-            
-            // forth layer
-            map.addLayer({
-                'id': 'Sunset-Themed',
-                'type': 'raster',
-                'layout': {
-                    'visibility': 'none'
-                },
-                'source': 'forth-tile'
-            });
 
         });
 
@@ -231,12 +212,12 @@
         // After the last frame rendered before the map enters an "idle" state.
         map.on('idle', () => {
             // If these two layers were not added to the map, abort
-            if (!map.getLayer('Modified Basemap') || !map.getLayer('San Francisco Park Scores') || !map.getLayer('San Francisco Park Scores on Basemap') || !map.getLayer('Sunset-Themed')) {
+            if (!map.getLayer('Modified Basemap') || !map.getLayer('San Francisco Park Scores') || !map.getLayer('San Francisco Park Scores on Basemap')) {
                 return;
             }
 
             // Enumerate ids of the layers.
-            const toggleableLayerIds = ['Modified Basemap', 'San Francisco Park Scores', 'San Francisco Park Scores on Basemap', 'Sunset-Themed'];
+            const toggleableLayerIds = ['Modified Basemap', 'San Francisco Park Scores', 'San Francisco Park Scores on Basemap'];
 
             // Set up the corresponding toggle button for each layer.
             for (const id of toggleableLayerIds) {
@@ -295,8 +276,8 @@
         const legend = document.getElementById('legend');
 
         //set up legend grades and labels
-        var labels = ['<strong class="break">San Francisco Park Scores</strong>'], vbreak;
-        const source = '<p style="text-align: right; font-size:10pt">Source: <a href="https://www.kaggle.com/datasets/danofer/sf-parks?resource=download">Kaggle</a></p>';
+        var labels = ['<strong class="break">Electric Vehicle Population Data</strong>'], vbreak;
+        const source = '<p style="text-align: right; font-size:10pt">Source: <a href="https://data.wa.gov/Transportation/Electric-Vehicle-Population-Data/f6w7-q2d2">Data.W.gov</a></p>';
         legend.innerHTML = labels.join('') + source;
 
         
