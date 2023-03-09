@@ -1,6 +1,5 @@
 # Group AB 4 - Electric Vehicle Adoption Trends in WA State
-
-## Team members: Jasmine So, Darwin Lopez, Abhinav Chandra Cherukuri, Shenhan Xu 
+Team members: Jasmine So, Darwin Lopez, Abhinav Chandra Cherukuri, Shenhan Xu 
 
 ## Overview - Explore the Electric Vehicle Adoption Trends in Washington State
 
