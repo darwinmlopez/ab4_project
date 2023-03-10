@@ -1,144 +1,137 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <title>Electric Vehicle Adoption Trends in WA State</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="Jasmine So, Darwin Lopez, Abhinav Chandra Cherukuri, Shenhan Xu">
+  <meta name="generator" content="">
+  <title>Team members: Jasmine So, Darwin Lopez, Abhinav Chandra Cherukuri, Shenhan Xu </title>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.4.0/leaflet.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-
-    <!--fill out href and type-->
-    <link rel="shortcut icon" href="" type="">
-
-    <link href="https://fonts.googleapis.com/css?family=Cairo" rel="stylesheet">
-
-    <!-- Fill out href-->
-    <link rel="stylesheet" type="text/css" href="">
+  <link rel="canonical" href="https://getbootstrap.com/docs/4.6/examples/starter-template/">
 
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.4.0/leaflet.js"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
 
 
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-ajax/2.1.0/leaflet.ajax.min.js"></script>
+  <style>
+    .lead {
+      font-weight: bold;
+      font-size: 1.2em;
+      color: #333333;
+    }
+    
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
 
-    <!--Fill out href-->
-    <script src=""></script>
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+
+    body {
+        background-image: url(img/main.jpg);
+        background-size: auto;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+      }
+    .overlay {
+        background-color: rgba(0, 0, 0, 0.5); /* Adjust the alpha value to change the transparency */
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+      }
+    
+  </style>
+
+
+  <!-- Custom styles for this template -->
+  <link href="css/starter-template.css" rel="stylesheet">
 </head>
+
 <body>
-   
-    <section id="cover">
-        <div id="intro">
-        <h1>Electric Vehicle Adoption Trends</h1>
-        <h3>Team members: Jasmine So, Darwin Lopez, Abhinav Chandra Cherukuri, Shenhan Xu</h3>
-        <h5>Overview: Explore the Electric Vehicle Adoption Trends in Washington State</h5>
-        <p>Electric vehicles use one or more electric motors for propulsion and they are one of the main technologies to decarbonise road transport. 
-            They can either be powered by a collector system with electricity from extravehicle sources, or it can be powered autonomously by a battery. 
-            During the late 2000s, governments began their incentives to increase adoption of electric vehicles. 
-            We can see exponential growth in the sales of electric vehicles with improved range, more model availability and increased performance.
-        </p>
 
-        <div class="footnote">
-            <span>Project created by GEOG 458 - Group AB4.</span>
-        </div>
-        </div>
-    </section>
-    
-    <section id="info">
-        <div id="aims">
-        <h5>Project significance and broader impacts</h5>
-        <p>In this project, we aim to understand the adoption trends of electric vehicles through demographic and geographic factors that influence growth in Washington State. 
-            Our goal is to acknowledge that electric vehicles are just one part of a broader transition to sustainable 
-            transportation systems and encourage policymakers to consider other solutions, 
-            such as public transit and active transportation.
-        </p>
-        
-        <div id="overview">
-        <h5>Primary functions and major data sources</h5>
-        <p>This project analyzes and visualizes the growth and distribution of electric vehicles and plug-in hybrid electric vehicles in Washington State. 
-           Our dataset is from Data.WA.gov, 
-            “Electric Vehicle Population Data” which shows the Battery Electric Vehicles (BEVs) and Plug-in Hybrid Electric Vehicles (PHEVs) 
-            that are currently registered through Washington State Department of Licensing (DOL). The data is created on April 16th in 2019, 
-            provided by the Washington State Department of Licensing (DOL) and owned by the Department of Licensing. The data will be cleaned and displayed as maps, graphs, charts, and comprehensive analysis. 
-            The aim of this project is to look into adoption trends of electric vehicles through demographic and geographic factors that influenced growth in the state.
-        </p>
-        <div id="audience">
-        <h5>Target audience</h5>
-        <p>This dataset mainly targets the government and car companies to study customer interests and the locations(city, state, census tracts variables) 
-           that buy the most Battery Electric Vehicles (BEVs) and Plug-in Hybrid Electric Vehicles.uenced growth in the state.
-        </p>
-        </div>
-        </div>
-        </div>
-    </section>
-    
-<div id="storymap" class="container-fluid">
-    <div class="row">
-        <div class="col-sm-6 col-md-8 storymap-map"></div>
-        <div class="col-sm-6 col-md-4 storymap-story">
-            <section data-scene="scene1">
-                <h2>scene 1</h2>
-            </section>
-            <section data-scene="scene2">
-                <h2>scene 2</h2>
-            </section>
-            <section data-scene="scene3">
-                <h2>scene 3</h2>
-            </section>
-        </div>
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="#">Electric Vehicle Adoption Trends in WA State</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Presentation<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="map1.html">Charging Stations</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="map2.html">Dot Density map</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="map3.html">Heat Map</a>
+        </li>
+      </ul>
     </div>
-</div>
-<script type="text/javascript">
+  </nav>
 
-    var layers = {
-        layer1: {
-            layer: L.tileLayer('http://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}'),
-            legend: '<i style="background: black; opacity: 0.5"></i><p><b>legend 1</b></p>'
-        },
-        layer2: {
-            layer: L.geoJson.ajax('../../assets/counties.geojson', {
-                color: 'orange',
-                weight: 5
-            }),
-            legend: '<i style="background: orange; opacity: 0.5"></i><p><b>legend 2</b></p>'
-        },
-        layer3: {
-            layer: L.tileLayer('http://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png')
-        }
-    };
-    //fill out lat, lng, zoom level, layers for each scene
-    var scenes = {
-        scene1: {lat: , lng: , zoom: , layers: [], name: "scene 1"},
-        scene2: {lat: , lng: , zoom: , layers: [], name: "scene 2"},
-        scene3: {lat: , lng: , zoom: , layers: [], name: "scene 3"}
-    };
+  <main role="main" class="container overlay">
 
-    $('#storymap').storymap({
-        scenes: scenes,
-        baselayer: layers.layer3,
-        legend: true,
-        loader: true,
-        flyto: true,
-        credits:  "Build with <i class='material-icons' style='color: red; font-size: 10px;'>favorite</i> from Bo Zhao",
-        scalebar: true,
-        scrolldown: true,
-        progressline: true,
-        navwidget: true,
-        createMap: function () {
-            var map = L.map($(".storymap-map")[0], {zoomControl: false}).setView([44, -120], 7);
-            basemap = this.baselayer.layer.addTo(map);
-            return map;
-        }
-    });
-</script>
+    <div class="starter-template">
+      <h1><b>Electric Vehicle Adoption Trends in WA State</b></h1>
+      <h3>Made by Jasmine So, Darwin Lopez, Abhinav Chandra Cherukuri, Shenhan Xu </h3>
+      <p></p>
+      <h4><b>Introduction:</b></h4>
+      <p class="lead">Electric vehicles use one or more electric motors for propulsion and they are one of the main technologies to decarbonise road transport. 
+        They can either be powered by a collector system with electricity from extravehicle sources, or it can be powered autonomously by a battery. 
+        During the late 2000s, governments began their incentives to increase adoption of electric vehicles. 
+        We can see exponential growth in the sales of electric vehicles with improved range, more model availability and increased performance.</p>
+      <h4><b>Project significance and broader impacts:</h4></p>
+      <p></p>
+      <p class="lead">In this project, we aim to understand the adoption trends of electric vehicles through demographic and geographic factors that influence growth in Washington State. 
+        Our goal is to acknowledge that electric vehicles are just one part of a broader transition to sustainable 
+        transportation systems and encourage policymakers to consider other solutions, 
+        such as public transit and active transportation.</p>
+      <h4><b>Primary functions and major data sources</h4></p>
+      <p></p>
+      <p class="lead">This project analyzes and visualizes the growth and distribution of electric vehicles and plug-in hybrid electric vehicles in Washington State. 
+        Our dataset is from Data.WA.gov, 
+         “Electric Vehicle Population Data” which shows the Battery Electric Vehicles (BEVs) and Plug-in Hybrid Electric Vehicles (PHEVs) 
+         that are currently registered through Washington State Department of Licensing (DOL). The data is created on April 16th in 2019, 
+         provided by the Washington State Department of Licensing (DOL) and owned by the Department of Licensing. The data will be cleaned and displayed as maps, graphs, charts, and comprehensive analysis. 
+         The aim of this project is to look into adoption trends of electric vehicles through demographic and geographic factors that influenced growth in the state. </p>
+        <p>Sources:</p>
+        <p>
+        <a href="https://gis-kingcounty.opendata.arcgis.com/" style="color: red;">King County GIS Open Data </a>
+        <br><a href="https://wallpapercave.com/electric-vehicle-wallpapers" style="color: red;">Background Image: wallpapercave.com/</a>
+        </p>
+    </div>
+
+  </main><!-- /.container -->
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script>
+    window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')
+  </script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+
+
 </body>
+
 </html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Chargin Station</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+
+  <style>
+    html,body,#map {
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    .info-box {
+        position: absolute;
+        top: 50%;
+        left: 10px;
+        transform: translateY(-50%);
+        padding: 10px;
+        background-color: rgba(255, 255, 255, 0.8); /* Set the background color with alpha (opacity) value */
+        border: 1px solid black;
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+        z-index: 999; /* Add a high z-index value to make the box appear on top of the map */
+        width: 400px; /* Optional: Set a fixed width for the box */
+    }
+
+    .info-box h2 {
+        margin-top: 0;
+        font-size: 16px;
+        font-weight: bold;
+        color: #333;
+        text-align: center;
+    }
+
+    .info-box li {
+    margin-bottom: 10px;
+    color: #666;
+    }
+
+  </style>
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">Electric Vehicle Adoption Trends in WA State</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Presentation<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="map1.html">Charging Stations</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="map2.html">Hospital Capacities</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="map3.html">Heat Map</a>
+              </li>
+          </ul>
+        </div>
+    </nav>
+
+    <div class="info-box">
+        <h2> steps Washington State has made to encourage the development of more charging stations for electric vehicles</h2>
+            <li>Incentives for charging station installation: The state provides incentives for businesses and individuals to install EV charging stations through grants, tax credits, and rebates.</li>
+            <li>Building codes: The state has adopted building codes that require new construction to include provisions for EV charging infrastructure.</li>
+            <li>Public-private partnerships: The state has formed partnerships with private companies to install and maintain public charging stations.</li>
+            <li>Regulations: The state has established regulations to encourage EV charging station deployment, including rules requiring utilities to offer time-of-use rates for EV charging.</li>
+            <li>Education and outreach: The state provides education and outreach programs to inform the public about the benefits of EVs and charging infrastructure.</li>
+    </div>
+
+  <div id='map'></div>
+  <script type="text/javascript">
+    var map = L.map('map', {
+      maxZoom: 12,
+      minZoom: 5,
+    }).setView([47.612833, -122.331739], 12.5);
+
+    var grayscale = L.tileLayer('http://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}@2x.png').addTo(map);
+    
+    var tile1 = L.tileLayer('assets/seattle/{z}/{x}/{y}.png', {
+      attribution: 'Modified Basemap',
+      detectRetina: true
+    });
+
+
+    var baseLayers = {
+      'Grayscale': grayscale,
+   
+    };
+
+    var overlays = {
+      "Charging Stations": tile1
+      
+    }
+
+    L.control.layers(baseLayers, overlays, {
+      collapsed: false,
+      position: 'topright'
+    }).addTo(map);
+  </script>
+</body>
+
+</html>
