@@ -33,6 +33,12 @@ This dataset mainly targets the *government** and **car companies** to study cus
  - Heatmap
  ![Heatmap](images/heatmap_ss.png)
 
+## Applied libraries & Web Services
+- Mapbox 
+- github 
+- basemap
+
+## Other Data Sources
 - Article: [A new report on our electric future](https://t4america.org/2023/01/20/sparking-progress-report/)
 - Article: [Study finds that smart charging strategies can help U.S. prepare for surge in electric vehicle usage
 ](https://www.geekwire.com/2020/study-finds-smart-charging-strategies-can-help-u-s-prepare-surge-electric-vehicle-usage/) 
