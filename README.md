@@ -1,7 +1,7 @@
 # Group AB 4 - Electric Vehicle Adoption Trends in WA State
 Team members: Jasmine So, Darwin Lopez, Abhinav Chandra Cherukuri, Shenhan Xu 
 
-Project URL:
+Project URL: https://darwinmlopez.github.io/ab4_project/
 
 ## Overview - Explore the Electric Vehicle Adoption Trends in Washington State
 
