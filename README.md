@@ -23,7 +23,7 @@ Major data source: [WA state Electrical Vehicle Population Data](https://data.wa
 
 ## Target audience
 
-This dataset mainly targets the *government** and **car companies** to study customer interests and the locations(city, state, census tracts variables) that buy the most Battery Electric Vehicles (BEVs) and Plug-in Hybrid Electric Vehicles. 
+This dataset mainly targets the **government** and **car companies** to study customer interests and the locations(city, state, census tracts variables) that buy the most Battery Electric Vehicles (BEVs) and Plug-in Hybrid Electric Vehicles. 
 
 ## Multimedia
  - Basemap
