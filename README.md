@@ -1,6 +1,8 @@
 # Group AB 4 - Electric Vehicle Adoption Trends in WA State
 Team members: Jasmine So, Darwin Lopez, Abhinav Chandra Cherukuri, Shenhan Xu 
 
+Project URL: https://darwinmlopez.github.io/ab4_project/
+
 ## Overview - Explore the Electric Vehicle Adoption Trends in Washington State
 
 Electric vehicles use one or more electric motors for propulsion and they are one of the main technologies to decarbonise road transport. They can either be powered by a collector system with electricity from extravehicle sources, or it can be powered autonomously by a battery. During the late 2000s, governments began their incentives to increase adoption of electric vehicles. We can see exponential growth in the sales of electric vehicles with improved range, more model availability and increased performance.
@@ -21,14 +23,22 @@ Major data source: [WA state Electrical Vehicle Population Data](https://data.wa
 
 ## Target audience
 
-This dataset mainly targets the *government** and **car companies** to study customer interests and the locations(city, state, census tracts variables) that buy the most Battery Electric Vehicles (BEVs) and Plug-in Hybrid Electric Vehicles. 
-
-## Conclusion 
-This project aims to understand the adoption trends of electric vehicles through demographic and geographic factors that influence growth in Washington State. From the dataset and various maps we created in this project, we can see … 
-
+This dataset mainly targets the **government** and **car companies** to study customer interests and the locations(city, state, census tracts variables) that buy the most Battery Electric Vehicles (BEVs) and Plug-in Hybrid Electric Vehicles. 
 
 ## Multimedia
+ - Basemap
+ ![Basemap](images/basemap_ss.png)
+ - Dot Density Map
+ ![Dotdensity](images/dotdensity_ss.png)
+ - Heatmap
+ ![Heatmap](images/heatmap_ss.png)
 
+## Applied libraries & Web Services
+- Mapbox 
+- github 
+- basemap
+
+## Other Data Sources
 - Article: [A new report on our electric future](https://t4america.org/2023/01/20/sparking-progress-report/)
 - Article: [Study finds that smart charging strategies can help U.S. prepare for surge in electric vehicle usage
 ](https://www.geekwire.com/2020/study-finds-smart-charging-strategies-can-help-u-s-prepare-surge-electric-vehicle-usage/) 
