@@ -26,8 +26,11 @@ Major data source: [WA state Electrical Vehicle Population Data](https://data.wa
 This dataset mainly targets the *government** and **car companies** to study customer interests and the locations(city, state, census tracts variables) that buy the most Battery Electric Vehicles (BEVs) and Plug-in Hybrid Electric Vehicles. 
 
 ## Multimedia
+ - Basemap
  ![Basemap](images/basemap_ss.png)
+ - Dot Density Map
  ![Dotdensity](images/dotdensity_ss.png)
+ - Heatmap
  ![Heatmap](images/heatmap_ss.png)
 
 - Article: [A new report on our electric future](https://t4america.org/2023/01/20/sparking-progress-report/)
