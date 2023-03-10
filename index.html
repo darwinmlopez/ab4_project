@@ -1,144 +1,93 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <title>Electric Vehicle Adoption Trends in WA State</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.4.0/leaflet.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-
-    <!--fill out href and type-->
-    <link rel="shortcut icon" href="" type="">
-
-    <link href="https://fonts.googleapis.com/css?family=Cairo" rel="stylesheet">
-
-    <!-- Fill out href-->
-    <link rel="stylesheet" type="text/css" href="">
-
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.4.0/leaflet.js"></script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
-
-
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-ajax/2.1.0/leaflet.ajax.min.js"></script>
-
-    <!--Fill out href-->
-    <script src=""></script>
+    <title>Electric Vehicle Adoption Trends</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-KV9/DRnG4YCBdlchzBpXYNbGxHwLpDsuJ7ZiAa2lXIkIbILHFOEwuCnwbYlYPgGTPlwOwk+rbECg/i08ESipA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-   
-    <section id="cover">
-        <div id="intro">
-        <h1>Electric Vehicle Adoption Trends</h1>
-        <h3>Team members: Jasmine So, Darwin Lopez, Abhinav Chandra Cherukuri, Shenhan Xu</h3>
-        <h5>Overview: Explore the Electric Vehicle Adoption Trends in Washington State</h5>
-        <p>Electric vehicles use one or more electric motors for propulsion and they are one of the main technologies to decarbonise road transport. 
-            They can either be powered by a collector system with electricity from extravehicle sources, or it can be powered autonomously by a battery. 
-            During the late 2000s, governments began their incentives to increase adoption of electric vehicles. 
-            We can see exponential growth in the sales of electric vehicles with improved range, more model availability and increased performance.
-        </p>
-
-        <div class="footnote">
-            <span>Project created by GEOG 458 - Group AB4.</span>
+    <!-- Navigation-->
+    <nav class="navbar">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="./img/logo.png" alt="Electric Vehicle Adoption Trends">
+            </a>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Maps</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">WA.gov</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Other Sources</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About Us</a>
+                </li>
+            </ul>
         </div>
-        </div>
-    </section>
-    
-    <section id="info">
-        <div id="aims">
-        <h5>Project significance and broader impacts</h5>
-        <p>In this project, we aim to understand the adoption trends of electric vehicles through demographic and geographic factors that influence growth in Washington State. 
-            Our goal is to acknowledge that electric vehicles are just one part of a broader transition to sustainable 
-            transportation systems and encourage policymakers to consider other solutions, 
-            such as public transit and active transportation.
-        </p>
-        
-        <div id="overview">
-        <h5>Primary functions and major data sources</h5>
-        <p>This project analyzes and visualizes the growth and distribution of electric vehicles and plug-in hybrid electric vehicles in Washington State. 
-           Our dataset is from Data.WA.gov, 
-            “Electric Vehicle Population Data” which shows the Battery Electric Vehicles (BEVs) and Plug-in Hybrid Electric Vehicles (PHEVs) 
-            that are currently registered through Washington State Department of Licensing (DOL). The data is created on April 16th in 2019, 
-            provided by the Washington State Department of Licensing (DOL) and owned by the Department of Licensing. The data will be cleaned and displayed as maps, graphs, charts, and comprehensive analysis. 
-            The aim of this project is to look into adoption trends of electric vehicles through demographic and geographic factors that influenced growth in the state.
-        </p>
-        <div id="audience">
-        <h5>Target audience</h5>
-        <p>This dataset mainly targets the government and car companies to study customer interests and the locations(city, state, census tracts variables) 
-           that buy the most Battery Electric Vehicles (BEVs) and Plug-in Hybrid Electric Vehicles.uenced growth in the state.
-        </p>
-        </div>
-        </div>
+    </nav>
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1>Electric Vehicle Adoption Trends</h1>
+            <p>Group AB4: Jasmine So, Darwin Lopez, Abhinav Chandra Cherukuri, Shenhan Xu</p>
         </div>
     </section>
-    
-<div id="storymap" class="container-fluid">
-    <div class="row">
-        <div class="col-sm-6 col-md-8 storymap-map"></div>
-        <div class="col-sm-6 col-md-4 storymap-story">
-            <section data-scene="scene1">
-                <h2>scene 1</h2>
-            </section>
-            <section data-scene="scene2">
-                <h2>scene 2</h2>
-            </section>
-            <section data-scene="scene3">
-                <h2>scene 3</h2>
-            </section>
-        </div>
+    <!-- INFO Section -->
+    <section class="info">
+        <div class="container">
+            <h2>Explore the Electric Vehicle Adoption Trends in Washington State</h2>
+            <div class="info-grid">
+                
+                    <div class="overview">
+                        <h3>Overview</h3>
+                        <p>Electric vehicles use one or more electric motors for propulsion and they are one of the main technologies to decarbonise road transport. 
+                            They can either be powered by a collector system with electricity from extravehicle sources, 
+                            or it can be powered autonomously by a battery. During the late 2000s, governments began their incentives to increase adoption of electric vehicles. 
+                            We can see exponential growth in the sales of electric vehicles with improved range, more model availability and increased performance.</p>
+                        <a href="#" class="btn btn-secondary">Read More</a>
+                    </div>
 
-    </div>
-</div>
-<script type="text/javascript">
+                    <div class="project-content">
+                        <h3>Project significance and broader impacts</h3>
+                        <p>In this project, we aim to understand the adoption trends of electric vehicles through demographic and geographic factors that influence growth in Washington State. 
+                            Our goal is to acknowledge that electric vehicles are just one part of a broader transition to sustainable 
+                            transportation systems and encourage policymakers to consider other solutions, 
+                            such as public transit and active transportation.</p>
+                        <a href="#" class="btn btn-secondary">Read More</a>
+                    </div>
 
-    var layers = {
-        layer1: {
-            layer: L.tileLayer('http://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}'),
-            legend: '<i style="background: black; opacity: 0.5"></i><p><b>legend 1</b></p>'
-        },
-        layer2: {
-            layer: L.geoJson.ajax('../../assets/counties.geojson', {
-                color: 'orange',
-                weight: 5
-            }),
-            legend: '<i style="background: orange; opacity: 0.5"></i><p><b>legend 2</b></p>'
-        },
-        layer3: {
-            layer: L.tileLayer('http://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png')
-        }
-    };
-    //fill out lat, lng, zoom level, layers for each scene
-    var scenes = {
-        scene1: {lat: , lng: , zoom: , layers: [], name: "scene 1"},
-        scene2: {lat: , lng: , zoom: , layers: [], name: "scene 2"},
-        scene3: {lat: , lng: , zoom: , layers: [], name: "scene 3"}
-    };
+                    <div class="project-functions">
+                        <h3>Primary functions and Major Data Source</h3>
+                        <p>This project analyzes and visualizes the growth and distribution of electric vehicles and plug-in hybrid electric vehicles in Washington State. 
+                            Our dataset is from Data.WA.gov, 
+                             “Electric Vehicle Population Data” which shows the Battery Electric Vehicles (BEVs) and Plug-in Hybrid Electric Vehicles (PHEVs) 
+                             that are currently registered through Washington State Department of Licensing (DOL). The data is created on April 16th in 2019, 
+                             provided by the Washington State Department of Licensing (DOL) and owned by the Department of Licensing. The data will be cleaned and displayed as maps, graphs, charts, and comprehensive analysis. 
+                             The aim of this project is to look into adoption trends of electric vehicles through demographic and geographic factors that influenced growth in the state.</p>
+                        <a href="#" class="btn btn-secondary">Data.WA.gov</a>
+                    </div>
 
-    $('#storymap').storymap({
-        scenes: scenes,
-        baselayer: layers.layer3,
-        legend: true,
-        loader: true,
-        flyto: true,
-        credits:  "Build with <i class='material-icons' style='color: red; font-size: 10px;'>favorite</i> from Bo Zhao",
-        scalebar: true,
-        scrolldown: true,
-        progressline: true,
-        navwidget: true,
-        createMap: function () {
-            var map = L.map($(".storymap-map")[0], {zoomControl: false}).setView([44, -120], 7);
-            basemap = this.baselayer.layer.addTo(map);
-            return map;
-        }
-    });
-</script>
-</body>
-</html>
+                    <div class="project-functions">
+                        <h3>Target Audience</h3>
+                        <p>This dataset mainly targets the government and car companies to study customer interests and the locations(city, state, census tracts variables) 
+                            that buy the most Battery Electric Vehicles (BEVs) and Plug-in Hybrid Electric Vehicles.uenced growth in the state.
+                        <a href="#" class="btn btn-secondary">Data.WA.gov</a>
+                    </div>
+
+                </div>
+                <div class="maps">
+                    <h1>Map 1 </h1>
+                    <div class="basemap">
+                    <img src="assets/basemap" alt="Basemap">
+                </div>
